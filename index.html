@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World of Warcraft - Index</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="src/css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+  <header>
+    <h1>World of Warcraft</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="game-description">
+      <h2>Experience the World of Azeroth</h2>
+      <p>
+        World of Warcraft is a massively multiplayer online role-playing game (MMORPG) developed by Blizzard Entertainment.
+        Join millions of players in exploring the vast and immersive world of Azeroth, filled with epic quests, challenging dungeons,
+        and thrilling player-vs-player battles.
+      </p>
+      <img src="./images/main.jpeg" alt="World of Warcraft Screenshot">
+    </section>
+
+    <section id="game-media">
+      <h2>Latest Trailer</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3ZtedjN1JXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="site-details">
+      <h2>Explore More</h2>
+      <ul>
+        <li><a href="info.html">Game Information</a></li>
+        <li><a href="reviews.html">Player Reviews</a></li>
+        <li><a href="about.html">About the Site</a></li>
+      </ul>
+    </section>
+
+    <section id="newsletter">
+      <h2>Join Our Newsletter</h2>
+      <form id="newsletterForm" action="https://httpbin.org/post" method="POST" onsubmit="return validateForm()">
+        <label for="email">Email:&nbsp;</label>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+        <input type="hidden" id="name" name="name" value="Shine">&nbsp;
+        <button type="submit">Join</button>
+      </form>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2023 World of Warcraft Fan Site from SHINE LEE. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
