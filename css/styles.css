@@ -28,50 +28,49 @@ img {
   height: auto;
 }
   
-  header {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  nav {
-    background-color: #762022;
-  }
+header {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  background-color: #762022;
+}
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
   
-  nav li {
-    display: inline;
-    margin-right: 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  footer {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-    /* CSS */
 form {
   display: flex;
   justify-content: flex-start;
@@ -85,53 +84,13 @@ section {
   margin-bottom: 50px; 
 }
 
-  /* Index.html */
-  #newsletter-form {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  /* Info.html */
-  #game-history,
-  #game-play,
-  #tips-strategies {
-    margin-bottom: 2rem;
-  }
-  
-  /* Reviews.html */
-  #reviews-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .review-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    max-width: 300px;
-  }
-  
-  .review-card h3 {
-    margin-top: 0;
-  }
-  
-  #add-review {
-    margin-top: 2rem;
-  }
-  
-  /* About.html */
-  #about-site,
-  #about-author,
-  #resources,
-  #honest-statement {
-    margin-bottom: 2rem;
-  }
+#newsletter-form {
+  text-align: center;
+  margin-top: 1rem;
+}
 
 
 
-
-/* Responsive design */
 @media screen and (max-width: 400px) {
     header h1 {
       font-size: 1.5rem;
@@ -155,5 +114,35 @@ section {
     }
   }
 
-  
-  
+
+/* Responsive YouTube video */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Info.html */
+#game-history,
+#game-play,
+#tips-strategies {
+  margin-bottom: 2rem;
+}
+
+
+/* About.html */
+#about-site,
+#about-author,
+#resources,
+#honest-statement {
+  margin-bottom: 2rem;
+}
