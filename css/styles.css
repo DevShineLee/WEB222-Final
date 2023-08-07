@@ -11,18 +11,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 768px) {
-  body {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    max-width: 80%;
-  }
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -90,31 +78,6 @@ section {
 }
 
 
-
-@media screen and (max-width: 400px) {
-    header h1 {
-      font-size: 1.5rem;
-    }
-  
-    nav {
-      display: block;
-    }
-  
-    nav li {
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-  
-    main {
-      padding: 1rem;
-    }
-  
-    .review-card {
-      max-width: 100%;
-    }
-  }
-
-
 /* Responsive YouTube video */
 .video-container {
   position: relative;
@@ -146,3 +109,41 @@ section {
 #honest-statement {
   margin-bottom: 2rem;
 }
+
+
+
+@media screen and (max-width: 350px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .review-card {
+    max-width: 100%;
+  }
+}
+
+
+/* @media (max-width: 768px) {
+body {
+  max-width: 90%;
+}
+}
+
+@media (max-width: 480px) {
+body {
+  max-width: 80%;
+}
+} */
