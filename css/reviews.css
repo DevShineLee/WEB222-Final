@@ -16,7 +16,7 @@
   }
   
 
-  
+
   #add-review {
     margin-top: 2rem;
   }
@@ -60,7 +60,7 @@
     height: 40px;
   }
   
-  @media (min-width: 500px) {
+  @media (min-width: 200px) {
     #add-review-form {
       align-items: flex-start;
     }
