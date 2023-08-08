@@ -82,5 +82,11 @@ window.reviewData = [
       date: '2023-08-01',
       rating: 4,
       reviewText: 'WoW offers a deep and immersive world with countless quests and activities. I enjoy the competitive nature of the game.',
+  },
+  {
+    name: 'Player14',
+    date: '2023-08-08',
+    rating: 4,
+    reviewText: 'As a dedicated player of World of Warcraft for years, I can confidently say that this game offers an unparalleled MMORPG experience. The vast and detailed world of Azeroth, the diverse range of classes and races, and the epic quests and raids never fail to captivate me.',
   }
 ];
