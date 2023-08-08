@@ -3,3 +3,140 @@
 #tips-strategies {
   margin-bottom: 2rem;
 }
+
+
+
+/* classes */
+.class-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.class-card {
+  flex: 0 0 calc(30% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.class-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.class-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.class-card p {
+  margin: 0.5rem 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .class-info {
+    flex-direction: column;
+  }
+  
+  .class-card {
+    flex: 0 0 100%;
+  }
+}
+
+
+#factions {
+  text-align: left;
+}
+
+#factions p {
+  margin-bottom: 2rem;
+}
+
+.faction-images-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.faction-images-a .faction-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faction-images-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.faction-images-h .faction-h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faction h3 {
+  font-size: 1.5rem;
+}
+
+.faction-a img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.faction-race-a img {
+  max-width: 870px; 
+  height: auto;
+}
+
+.faction-h img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.faction-race-h img {
+  max-width: 871px; 
+  height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .class-info {
+    flex-direction: column;
+  }
+
+  .class-card {
+    flex: 0 0 100%;
+  }
+
+  .faction-images-a,
+  .faction-images-h {
+    flex-direction: column;
+  }
+
+  .faction-a img,
+  .faction-h img,
+  .faction-race-a img,
+  .faction-race-h img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .faction-images-a .faction-a,
+  .faction-images-h .faction-h {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
