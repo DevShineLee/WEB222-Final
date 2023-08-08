@@ -1,0 +1,252 @@
+h1, h2, h3, h4, h5, h6  {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+  
+header {
+  /* background-color: #333; */
+  background-image: url("../images/header.jpg");
+  background-size: cover; 
+  background-position: center center;
+  width: 100%;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+header img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #762022;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+  
+form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+form input[type="email"] {
+  width: 200px;
+}
+
+section {
+  margin-bottom: 50px; 
+}
+
+#newsletter-form {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+/* Responsive YouTube video */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* Additional CSS for faction and race images */
+.faction-images,
+.race-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.faction,
+.race {
+  text-align: center;
+}
+
+.faction img,
+.race img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.faction h3,
+.race h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .faction-images,
+  .race-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faction,
+  .race {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .review-card {
+    max-width: 100%;
+  }
+}
+
+
+/* races */
+#factions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.alliance,
+.horde {
+  width: 48%; /* 2%의 간격을 유지하여 양쪽으로 나뉘도록 설정 */
+}
+
+.race-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.race {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.race img {
+  max-width: 100%;
+  height: auto;
+}
+
+.race h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* classes */
+/* 이미지와 텍스트가 세로로 나열되도록 스타일을 조정합니다 */
+/* 이미지와 텍스트가 세로로 나열되도록 스타일을 조정합니다 */
+.class-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.class-card {
+  flex: 0 0 calc(30% - 1rem); /* 가로로 3개씩 나열되도록 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.class-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.class-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.class-card p {
+  margin: 0.5rem 0;
+}
+
+/* 반응형 디자인에 대한 스타일을 추가합니다 */
+@media screen and (max-width: 768px) {
+  .class-info {
+    flex-direction: column;
+  }
+  
+  .class-card {
+    flex: 0 0 100%;
+  }
+}
