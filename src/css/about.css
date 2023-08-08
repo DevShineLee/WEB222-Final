@@ -1,6 +1,23 @@
 #about-site,
-#about-author,
 #resources,
 #honest-statement {
   margin-bottom: 2rem;
+}
+
+
+#about-author img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  display: block;
+}
+
+#about-author figcaption {
+  text-align: center;
+}
+
+@media screen and (max-width: 470px) {
+  #about-author img {
+    max-width: 100%; 
+  }
 }
