@@ -4,7 +4,6 @@ function generateReviewCards() {
     reviewData.forEach((review) => {
       const card = document.createElement('div');
       card.classList.add('review-card');
-      // Add the review content to the card, e.g., name, date, rating, reviewText
       card.innerHTML = `
         <h3>${review.name}</h3>
         <p>Date: ${review.date}</p>
